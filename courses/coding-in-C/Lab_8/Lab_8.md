@@ -205,8 +205,12 @@ Explanations to cmake:
 
 5. Create a folder called build in the project and navigate into it
 6. Run the following command to create a Makefile that uses MinGW:
-```c
-cmake -G "MinGW Makefiles" ..
+```bash
+cmake -G "MinGW Makefiles" ..    # command for local Windows machine
+```
+or
+```bash
+cmake ..    # command for Unix-based GitHub codespaces
 ```
 7. Then build the project and execute the tests in parallel with:
 ```c
